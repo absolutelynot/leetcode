@@ -24,8 +24,7 @@ public:
 	vector<int> twoSum(vector<int>& nums, int target) {
 		unordered_map<int, int> hash;
 		vector<int> result(2);
-		int size = nums.size();
-		for (int i = 0; i < size; i++) {
+		for (int i = 0; i < nums.size(); i++) {
 			int numberToFind = target - nums[i];
 			if (hash.find(numberToFind) != hash.end()) {
 				result[0] = hash[numberToFind];
